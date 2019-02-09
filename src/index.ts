@@ -7,7 +7,7 @@ server.get('/', async (request, reply) => {
 })
 const start = async () => {
     try {
-        await server.listen(5000)
+        await server.listen(5000, '0.0.0.0')
         console.log('Server running at:', 5000)
     } catch (err) {
         console.log(err)
